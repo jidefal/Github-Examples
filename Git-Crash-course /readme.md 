@@ -1,4 +1,41 @@
+## Git 
+
+There is a hidden folder called 'git' which tells you that our project is a git repo. 
+
+If we want to create a git repo in a new project. we create the folder and initialize the repo using 
+`git init` 
+
+```sh
+mkdir new-project 
+cd new-project 
+touch readme.md 
+code readme.md  
+```
+
+## Cloning 
+We can clone three ways: HTTPS, SSH, Github CLI. 
+
+Since we are using Github Codespaces. we'll create temporary directory in our workspace. 
+
+```sh
+mkdir /workspace/tmp 
+cd /workspace/tmp 
+
+```
+### HTTPS
+
+```sh
+git clone https://github.com/jidefal/Github-Examples.git 
+```
+
 ## Commits 
+
+When we want to commit code we write git commit. 
+which will open up the commit edit message in the editor of choice. 
+
+```sh 
+Git commit 
+```
 
 ## Branches 
 
@@ -8,3 +45,28 @@
 
 ## Merging 
 
+## Add 
+when we want to stage changes that will be included in the commit. we will use the "." to add 
+all possible files. 
+
+```sh 
+git add readme.md 
+git add . 
+```
+## Status 
+
+Git status shows you what files will or will not be committed. 
+
+```sh 
+git status 
+```
+## Gitconfig file 
+
+The git config file is what stores your local configurations for git such as 
+email, name, editor and more. 
+
+Showing the content of our git config file. 
+
+```
+git config --list
+```
