@@ -36,6 +36,11 @@ which will open up the commit edit message in the editor of choice.
 ```sh 
 Git commit 
 ```
+Make a commit and commit message without opening an editor 
+
+```sh 
+git commit -m "write the commit message" 
+```
 
 ## Branches 
 
@@ -70,3 +75,15 @@ Showing the content of our git config file.
 ```
 git config --list
 ```
+## Log
+
+Git log will show recent git commit to the git tree 
+
+## Push
+
+When we want to push a repo to our remote origin. 
+
+```
+git push
+```
+
